@@ -1,4 +1,4 @@
-# Scriptable-Tags
+# Unity-Scriptable-Tags
 Quickly set up object tags without using the standard Unity tag system.
 
 ## How to install
@@ -10,9 +10,7 @@ Open up the package manager `Window/Package Manager` and click on `Add package f
 
 Paste in this repository's url.
 
-`https://github.com/Jason-Skillman/Scriptable-Tags.git`
-
-![unity_package_manager_git_with_url](Documentation~/images/unity_package_manager_git_with_url.png)
+`https://github.com/Jason-Skillman/Unity-Scriptable-Tags.git`
 
 Click `Add` and the package will be installed in your project.
 
@@ -29,7 +27,7 @@ If you are using Unity 2019.2 or lower than you will not be able to install the 
 Alternatively you can also install this package as a git submodule.
 
 ```console
-$ git submodule add https://github.com/Jason-Skillman/Scriptable-Tags.git Packages/Scriptable-Tags
+$ git submodule add https://github.com/Jason-Skillman/Unity-Scriptable-Tags.git Packages/Unity-Scriptable-Tags
 ```
 
 ## How to use
