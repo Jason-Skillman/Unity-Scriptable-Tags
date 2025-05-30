@@ -1,8 +1,8 @@
 {
-  "name": "com.jasonskillman.scriptabletags",
-  "displayName": "Scriptable Tags",
-  "version": "1.1.0",
-  "description": "Quickly set up object tags without using the standard Unity tag system.",
+  "name": "com.jasonskillman.unityscriptabletags",
+  "displayName": "Unity Scriptable Tags",
+  "version": "1.1.1",
+  "description": "Quickly set up object tags without using the standard Unity tag system. Inspired by Gameplay Tags for Unreal Engine",
   "keywords": [
 	"scriptable objects",
 	"tags"
