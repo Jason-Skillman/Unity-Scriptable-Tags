@@ -1,11 +1,17 @@
-﻿namespace JasonSkillman.ScriptableTags {
-	using System.Collections.Generic;
-	using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 
-	public class TagComponent : MonoBehaviour {
+namespace JasonSkillman.ScriptableTags
+{
+	public class TagComponent : MonoBehaviour
+	{
 		[SerializeField]
 		private List<Tag> tags;
 
-		public List<Tag> Tags { get => tags; set => tags = value; }
+		public List<Tag> Tags
+		{
+			get => tags;
+			set => tags = value;
+		}
 	}
 }

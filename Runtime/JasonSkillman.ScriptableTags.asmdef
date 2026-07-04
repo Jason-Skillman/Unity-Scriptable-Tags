@@ -1,6 +1,6 @@
 {
-    "name": "JasonSkillman.UnityScriptableTags",
-    "rootNamespace": "JasonSkillman.UnityScriptableTags",
+    "name": "JasonSkillman.ScriptableTags",
+    "rootNamespace": "JasonSkillman.ScriptableTags",
     "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],
