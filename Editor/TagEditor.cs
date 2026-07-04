@@ -1,9 +1,10 @@
-﻿namespace JasonSkillman.ScriptableTags.Editor {
-	using UnityEditor;
-	using UnityEngine;
+﻿using UnityEditor;
+using UnityEngine;
 
+namespace JasonSkillman.ScriptableTags.Editor
+{
 	[CustomEditor(typeof(Tag))]
-	public class TagEditor : Editor
+	public class TagEditor : UnityEditor.Editor
 	{
 		public override void OnInspectorGUI()
 		{
@@ -12,8 +13,9 @@
 			Tag tag = (Tag)target;
 
 			EditorGUILayout.LabelField("GUID", tag.GuidString);
-        
-			if(GUILayout.Button("Generate new GUID")) {
+
+			if(GUILayout.Button("Generate new GUID"))
+			{
 				tag.CreateNewGuid();
 			}
 		}

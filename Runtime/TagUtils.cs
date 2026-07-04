@@ -1,18 +1,21 @@
-﻿namespace JasonSkillman.ScriptableTags {
-	using System.Collections.Generic;
-	using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 
-	public static class TagUtils {
-		
+namespace JasonSkillman.ScriptableTags
+{
+	public static class TagUtils
+	{
 		/// <summary>
 		/// Check if any of the tags on <paramref name="gameObject"/> match <paramref name="tag"/>.
 		/// </summary>
-		public static bool ContainsTag(this GameObject gameObject, Tag tag) {
+		public static bool ContainsTag(this GameObject gameObject, Tag tag)
+		{
 			if(!gameObject.TryGetComponent(out TagComponent tagComponent))
 				return false;
 
 			List<Tag> goTagList = tagComponent.Tags;
-			for(int i = 0; i < goTagList.Count; i++) {
+			for(int i = 0; i < goTagList.Count; i++)
+			{
 				Tag goTag = goTagList[i];
 
 				if(goTag == tag)
@@ -21,27 +24,30 @@
 
 			return false;
 		}
-		
+
 		/// <summary>
 		/// Check if any of the tags on <paramref name="gameObject"/> match any in <paramref name="tags"/>.
 		/// </summary>
-        public static bool ContainsTag(this GameObject gameObject, Tag[] tags) {
-        	if(!gameObject.TryGetComponent(out TagComponent tagComponent))
-        		return false;
+		public static bool ContainsTag(this GameObject gameObject, Tag[] tags)
+		{
+			if(!gameObject.TryGetComponent(out TagComponent tagComponent))
+				return false;
 
-        	List<Tag> goTagList = tagComponent.Tags;
-        	for(int i = 0; i < goTagList.Count; i++) {
-		        Tag goTag = goTagList[i];
+			List<Tag> goTagList = tagComponent.Tags;
+			for(int i = 0; i < goTagList.Count; i++)
+			{
+				Tag goTag = goTagList[i];
 
-                for(int j = 0; j < tags.Length; j++) {
-	                Tag tag = tags[j];
-	                
-	                if(goTag == tag)
-		                return true;
-                }
-        	}
+				for(int j = 0; j < tags.Length; j++)
+				{
+					Tag tag = tags[j];
 
-        	return false;
-        }
+					if(goTag == tag)
+						return true;
+				}
+			}
+
+			return false;
+		}
 	}
 }
